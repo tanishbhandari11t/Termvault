@@ -1,0 +1,182 @@
+/* TermVault TUI — Phase 5 Part 1 + Part 2 styles */
+
+Screen {
+    layout: vertical;
+}
+
+#top-bar {
+    dock: top;
+    height: auto;
+    padding: 0 1;
+}
+
+#search-row {
+    height: auto;
+}
+
+#search {
+    width: 1fr;
+    margin-bottom: 0;
+}
+
+#filter-summary {
+    width: auto;
+    color: $warning;
+    padding: 0 1;
+    text-style: italic;
+}
+
+#shortcut-hints {
+    color: $text-muted;
+    padding: 0 1 1 1;
+    text-style: dim;
+}
+
+#body-row {
+    height: 1fr;
+}
+
+#sidebar {
+    width: 22;
+    border: tall $accent;
+    margin: 0 0 1 1;
+    padding: 0 1;
+    background: $surface;
+}
+
+#sidebar-title {
+    text-style: bold;
+    padding: 1 0 0 0;
+}
+
+#tag-list {
+    height: 1fr;
+}
+
+#main {
+    width: 1fr;
+    height: 1fr;
+    margin: 0 1 1 1;
+}
+
+#entry-list {
+    width: 2fr;
+    border: tall $secondary;
+    margin-right: 1;
+    background: $surface;
+}
+
+#detail-pane {
+    width: 3fr;
+    border: tall $primary;
+    padding: 1 2;
+    background: $surface;
+}
+
+#detail-title {
+    text-style: bold;
+    color: $text;
+    margin-bottom: 1;
+}
+
+#detail-meta {
+    color: $text-muted;
+    margin-bottom: 1;
+    padding-bottom: 1;
+    border-bottom: solid $panel;
+}
+
+#detail-body-scroll {
+    height: 1fr;
+}
+
+#detail-body {
+    height: auto;
+}
+
+#status {
+    dock: bottom;
+    height: 1;
+    padding: 0 1;
+    background: $boost;
+    color: $text-muted;
+}
+
+.modal-dialog {
+    width: 74%;
+    height: auto;
+    max-height: 88%;
+    border: thick $accent;
+    background: $surface;
+    padding: 1 2;
+    margin: 2 4;
+}
+
+#help-dialog,
+#stats-dialog,
+#palette-dialog {
+    width: 82%;
+    height: 82%;
+}
+
+#help-body,
+#stats-body,
+#palette-list {
+    height: 1fr;
+}
+
+#draft-banner {
+    color: $warning;
+    margin-bottom: 1;
+    text-style: italic;
+}
+
+#edit-body,
+#new-body {
+    height: 12;
+    margin: 1 0;
+    border: solid $panel;
+}
+
+#edit-actions {
+    height: auto;
+    align: right middle;
+    margin-top: 1;
+}
+
+#edit-actions Button {
+    margin-left: 1;
+}
+
+#confirm-message {
+    margin-bottom: 1;
+}
+
+.entry-row {
+    padding: 0 1;
+    height: 1;
+}
+
+.entry-row.pinned {
+    text-style: bold;
+    color: $warning;
+}
+
+.entry-row.trashed {
+    color: $text-muted;
+    text-style: dim;
+}
+
+.tag-row {
+    padding: 0 1;
+}
+
+.tag-row.active {
+    background: $accent;
+    color: $text;
+    text-style: bold;
+}
+
+ListView:focus {
+    border: tall $secondary;
+}
